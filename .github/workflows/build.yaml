@@ -7,4 +7,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Docker build
+        shell: cmd
         run: docker build . --tag mywintest
