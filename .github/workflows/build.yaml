@@ -6,9 +6,12 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: WTF
         shell: cmd
         run: dir
+
       - name: Docker build
         shell: cmd
         run: docker build . --tag mywintest
